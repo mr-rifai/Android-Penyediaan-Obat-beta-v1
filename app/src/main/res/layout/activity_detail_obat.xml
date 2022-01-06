@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".detail.DetailObat">
+    <!-- navbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="-10dp"
+                android:forceDarkAllowed="false"
+                android:src="@drawable/ic_penyediaan"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Penyediaan Obat"
+                android:textColor="@color/putih"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/header"/>
+    <!-- Slide -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="35dp"
+        android:orientation="vertical"
+        android:background="@drawable/menu"
+        android:padding="5dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/obat"/>
+        <TextView
+            android:id="@+id/namaO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="NAMA OBAT"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <!-- navbar Obat-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgberita"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout
+            android:id="@+id/temukanO"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:foreground="?android:attr/selectableItemBackground">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="temukan"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textAllCaps="true"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imagedobat"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/obat"/>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Golongan Obat"
+                android:textStyle="bold"
+                android:textColor="#81b214"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/jenisO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="jenis obat"
+                android:textSize="13sp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Indikasi Obat"
+                android:textStyle="bold"
+                android:textColor="#81b214"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/GejalaO1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="jenis obat"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/GejalaO2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="jenis obat"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/GejalaO3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jenis obat"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="13sp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Komposisi Obat"
+                android:textStyle="bold"
+                android:textColor="#81b214"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/komposiO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Komposisi obat"
+                android:maxLines="1"
+                android:textSize="13sp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Deskripsi Obat"
+                android:textStyle="bold"
+                android:textColor="#81b214"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/descO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="desc obat"
+                android:textSize="13sp"
+                android:ellipsize="end"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

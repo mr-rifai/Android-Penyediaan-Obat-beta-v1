@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFEFEF"
+    tools:context=".MainActivity">
+    <!-- navbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="-10dp"
+                android:forceDarkAllowed="false"
+                android:src="@drawable/ic_penyediaan"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Penyediaan Obat"
+                android:textColor="@color/putih"
+                android:textSize="30dp"
+                android:textStyle="bold"></TextView>
+            <ImageView
+                android:id="@+id/admin"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:forceDarkAllowed="false"
+                android:clickable="true"
+                android:src="@drawable/admin"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/header" />
+    <!-- Slide -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/splash"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:src="@drawable/ic_covid19" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POSITIF"
+                android:autoSizeMinTextSize="10dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeStepGranularity="2dp"
+                android:textColor="#810000" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SEMBUH"
+                android:autoSizeMinTextSize="10dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeStepGranularity="2dp"
+                android:textColor="#206a5d"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MENINGGAL"
+                android:autoSizeMinTextSize="10dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeStepGranularity="2dp"
+                android:textColor="#798777" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/Positif"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="XXXXX"
+                android:textStyle="bold"
+                android:autoSizeMinTextSize="10dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeStepGranularity="2dp"
+                android:textColor="@color/putih"
+                android:background="#810000"/>
+            <TextView
+                android:id="@+id/Sembuh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="XXXXX"
+                android:textStyle="bold"
+                android:autoSizeMinTextSize="10dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeStepGranularity="2dp"
+                android:textColor="@color/putih"
+                android:background="#194350"/>
+            <TextView
+                android:id="@+id/Meninggal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="XXXXX"
+                android:textStyle="bold"
+                android:autoSizeMinTextSize="10dp"
+                android:autoSizeMaxTextSize="20dp"
+                android:autoSizeStepGranularity="2dp"
+                android:textColor="@color/putih"
+                android:background="#798777"/>
+        </LinearLayout>
+    </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+    <!--- menu -->
+    <include layout="@layout/menu"/>
+    <!-- Berita -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <!-- navbar berita-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgberita"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="Berita Terbaru"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_berita" />
+            </LinearLayout>
+        </LinearLayout>
+    <!--Berita terbaru -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp" />
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>
